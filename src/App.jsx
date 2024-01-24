@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import KeyboardEventHandler from "react-keyboard-event-handler";
+// import KeyboardEventHandler from "react-keyboard-event-handler";
 
 import pacmanImg from "./assets/animations.gif";
 import ghostImg from "./assets/ghost.png";
