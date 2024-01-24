@@ -709,13 +709,21 @@ function App() {
     }, 1);
   };
 
+  useEffect(() => {
+    if (pacman !== null) {
+      document.addEventListener("keydown", (event) => {
+        handleKeyEvent(event.key);
+      });
+    }
+  }, [pacman]);
+
   return (
     <>
       <canvas ref={canvasRef} id="canvas" width="500" height="500"></canvas>
-      <KeyboardEventHandler
+      {/* <KeyboardEventHandler
         handleKeys={["up", "down", "left", "right", "a", "w", "s", "d"]}
         onKeyEvent={(e) => handleKeyEvent(e)}
-      />
+      /> */}
       <div style={{ display: "none" }}>
         <img ref={pacmanImgRef} id="animations" src={pacmanImg} alt="" />
         <img ref={ghostsImgRef} id="ghosts" src={ghostImg} alt="" />
