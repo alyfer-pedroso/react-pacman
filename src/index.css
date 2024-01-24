@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Emulogic;
+  src: url("./assets//emulogic.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
